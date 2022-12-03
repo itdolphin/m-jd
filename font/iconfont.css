@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 1364057 */
+  src: url('iconfont.woff2?t=1668064737042') format('woff2'),
+       url('iconfont.woff?t=1668064737042') format('woff'),
+       url('iconfont.ttf?t=1668064737042') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon04:before {
+  content: "\e601";
+}
+
+.icon-shouye:before {
+  content: "\e8b9";
+}
+
+.icon-shiwu-gouwuche:before {
+  content: "\e752";
+}
+
+.icon-weidenglu:before {
+  content: "\e6a3";
+}
+
+.icon-weibo:before {
+  content: "\e610";
+}
+
+.icon-yixin0:before {
+  content: "\e6b5";
+}
+
+.icon-icons-:before {
+  content: "\e673";
+}
+
+.icon-pingguo:before {
+  content: "\e63d";
+}
+
+.icon-add:before {
+  content: "\e6f1";
+}
+
+.icon-RectangleCopy:before {
+  content: "\e6ae";
+}
+
+.icon-xiangzuo:before {
+  content: "\e637";
+}
+
+.icon-iphone:before {
+  content: "\e68a";
+}
+
+.icon-xiahua:before {
+  content: "\e628";
+}
+
+.icon-ico:before {
+  content: "\e646";
+}
+

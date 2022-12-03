@@ -1,0 +1,280 @@
+// header 头部
+
+@media screen  {
+    html {
+        font-size: 26.667vw ;
+    }
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    z-index: 2;
+    background-color: transparent;
+    .left {
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 40px;
+        h1 {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            width: 60px;
+            height: 30px;
+            background: url(../images/sprites.png) 1px -305px /200px 200px;
+        }
+    };
+    .center {
+        flex: 1;
+        position: relative;
+        height: 30px;
+        .icon {
+            position: absolute;
+            left: 5px;
+            top: 1px;
+            width: 33px;
+            height: 33px;
+            background:  url(../images/sprites.png) no-repeat;
+            background-position: -165px 0;
+            transform: scale(0.6);
+            z-index: 1;
+        }
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding-left: 35px;
+            border-radius: 15px;
+            border: none;
+        }
+    };
+    .right {
+        width: 49px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+    };
+}
+// banner区域
+#banner {
+    height: 1.75rem;
+    .banner {
+    width: 100%;
+    background-color: skyblue;
+    .swiper-wrapper {
+        width: 100%;
+        height: 1.75rem;
+        margin: 0 auto;
+        .swiper-slide {
+            float: left;
+            // display: none;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            };
+            &.active {
+                // display: block;
+            }
+        }
+    }
+    .swiper-pagination {
+        font-size: 0.16rem;
+    }
+}
+} 
+
+// nav导航
+#nav {
+    height: 1.6rem;
+    font-size: 0.14rem;
+    background-color: #fff;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 0.8rem;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                width: 0.4rem;
+                height: 0.4rem;
+                margin-bottom: 0.09rem;
+            }
+        }
+    }
+}
+// main
+main {
+    width: 100%;
+    padding: 10px;
+    section {
+        background-color: #fff;
+    }
+    // 秒杀
+    .seckill {
+        width: 100%;
+        font-size: 0.14rem;
+        // background-color: pink;
+        .seckill-title {
+            display: flex;
+            justify-content: space-between;
+            height: 0.3rem;
+            // background-color: skyblue;
+            .seckill-title-left {
+                height: 100%;
+                img {
+                    float: left;
+                    width: 0.2rem;
+                    height: 0.25rem;
+                    margin: 0.02rem 0.06rem 0 0.05rem;
+                }
+                >span {
+                    float: left;
+                    line-height: 0.14rem;
+                    margin-top: 0.07rem;
+                    margin-right: 0.1rem;
+                    color: #df443b;
+                }
+                .count-down {
+                    float: left;
+                    padding-top: 0.07rem;
+                    span {
+                        float: left;
+                        width: 0.15rem;
+                        height: 0.15rem;
+                        line-height: 0.15rem;
+                        text-align: center;
+                        background-color: #000;
+                        color: #fff;
+                        margin-right: 0.04rem;
+                        &:nth-child(3n) {
+                            width: 0.03rem;
+                            background-color: #fff;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .seckill-title-right {
+                margin-top: 0.07rem;
+                margin-right: 0.09rem;
+                font-size: 0.12rem;
+            }
+        }
+        >ul {
+            display: flex;
+            width: 100%;
+            margin-bottom: 0.1rem;
+            li {
+                flex: 1;
+                height: 1.48rem;
+                border-right: 0.01rem solid #ccc;
+                a {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.09rem;
+                    // -webkit-text-size-adjust: none;
+                    img {
+                        width: 100%;
+                    };
+                    .current-price {
+                        color: #cc332a;
+                    };
+                    .original-price {
+                        // font-
+                    };
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .cate-nav {
+        width: 100%;
+        margin-bottom: 0.09rem;
+        .cate-nav-title {
+            height: 0.3rem;
+            padding-top: 0.075rem;
+            border-bottom: 0.01rem solid #cccccc;
+            
+            h3 {
+                float: left;
+                font-size: 0.15rem;
+                line-height: 0.15rem;
+                font-weight: normal;
+                &::before {
+                    content: "";
+                    float: left;
+                    width: 0.04rem;
+                    height: 0.15rem;
+                    margin: 0 0.07rem 0 0.1rem;
+                    background-color: #cc332a;
+                }
+            }
+        }
+        .cate-nav-content {
+            display: flex;
+            height: 1.94rem;
+            >div {
+                flex: 1;
+                overflow: hidden;
+                a {
+                    display: block;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                    &.bl {
+                        border-left: 1px solid #ccc;
+                    }
+                    &.br {
+                        border-right: 1px solid #ccc;
+                    }
+                    &.bb {
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+                &.right {
+                    a {
+                        height: 50%;
+                        img {
+                           vertical-align: top; 
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        &:last-child {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+
+// footer
+
